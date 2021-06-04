@@ -178,8 +178,13 @@ class Map extends React.Component {
         <div id="main-container">
           <div id="main-map-container">
             <div id="search-and-select">
-              <div style={{backgroundColor: "#fff100"}} id="main-selection-container">
-                <h2 style={{color: "#dc143c"}} className="centered-text">SEARCH BY :</h2>
+              <div
+                style={{ backgroundColor: "#fff100" }}
+                id="main-selection-container"
+              >
+                <h2 style={{ color: "#dc143c" }} className="centered-text">
+                  SEARCH BY :
+                </h2>
               </div>
               <div id="main-rating-container">
                 <Searches
@@ -265,10 +270,10 @@ class Map extends React.Component {
             </AliceCarousel>
           </div>
           <RestaurantContainer
-                resSelections={this.state.selections}
-                removal={(resId) => this.removeSelection(resId)}
-                addSelectionsToStore={this.addSelectionsToStore}
-              />
+            resSelections={this.state.selections}
+            removal={(resId) => this.removeSelection(resId)}
+            addSelectionsToStore={this.addSelectionsToStore}
+          />
         </div>
       </ThemeProvider>
     );
