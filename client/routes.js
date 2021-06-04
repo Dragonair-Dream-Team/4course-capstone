@@ -5,7 +5,6 @@ import Emails from "./components/Emails";
 import Invite from "./components/Invite";
 import Home from "./components/home";
 import Map from "./components/Map";
-import CreateEvent from "./components/CreateEvent";
 import BeginSearch from "./components/BeginSearch";
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "./theme.js";
@@ -45,7 +44,6 @@ class Routes extends React.Component {
             <Route path="/wheel" component={Wheel} />
             <Route exact path="/events/:eventId" component={SingleEvent} />
             <Route exact path="/thankyou" component={ThankYou} />
-            <Route exact path="/createevent" component={CreateEvent} />
             <Redirect to="/" />
           </Switch>
         ) : (
